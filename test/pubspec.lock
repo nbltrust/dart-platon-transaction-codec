@@ -134,6 +134,24 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "1.2.6"
+  eth_abi_codec:
+    dependency: transitive
+    description:
+      path: "."
+      ref: "0.2.1"
+      resolved-ref: bc723a201d36dc85c5087b45fb409dcaae214bcf
+      url: "https://github.com/nbltrust/dart-eth-abi-codec"
+    source: git
+    version: "0.2.1"
+  ethereum_codec:
+    dependency: "direct main"
+    description:
+      path: "."
+      ref: "0.2.8"
+      resolved-ref: d0d2e911bb962781baea4e93169758dd8126da3c
+      url: "https://github.com/nbltrust/dart-eth-transaction-codec"
+    source: git
+    version: "0.2.8"
   ethereum_util:
     dependency: transitive
     description:
@@ -411,6 +429,13 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "1.8.1"
+  sprintf:
+    dependency: transitive
+    description:
+      name: sprintf
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "5.0.0"
   stack_trace:
     dependency: transitive
     description:
