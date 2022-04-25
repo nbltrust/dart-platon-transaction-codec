@@ -1,5 +1,5 @@
 name: platon_codec
-version: 0.0.1
+version: 0.1.0
 
 dependencies:
   bech32: ^0.1.2

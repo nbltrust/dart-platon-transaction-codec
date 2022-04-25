@@ -17,7 +17,7 @@ class PlatonTransaction extends DelegatingMap {
     this.delegate['rawHex'] = rawHex;
   }
 
-  factory PlatonTransaction.deserialize(String rawHex, [bech32Hrp = 'lat', chainId = 210309]) {
+  factory PlatonTransaction.deserialize(String rawHex, {bech32Hrp = 'lat', chainId = 210309}) {
     final ethTx = EthereumTransaction.fromRlp(hex.decode(strip0x(rawHex)));
     ethTx.chainId = chainId;
 
