@@ -1,5 +1,7 @@
 library cosmos_codec_test.transaction_test;
 
+import 'dart:typed_data';
+
 import 'package:convert/convert.dart';
 import 'package:ethereum_codec/ethereum_codec.dart';
 import 'package:platon_codec/platon_codec.dart';
@@ -17,7 +19,7 @@ void main() {
     expect(tx['gasPrice'], 1000000000);
     expect(tx['nonce'], 10);
 
-    final ethTx = EthereumTransaction.fromRlp(hex.decode(rawHex));
+    final ethTx = EthereumTransaction.fromRlp(Uint8List.fromList(hex.decode(rawHex)));
 
     expect(hex.encode(tx.hashToSign()), 'ef14414f3deb6208d69443f0ed599c8ae091566313f9208274402a2c07ef0359');
   });

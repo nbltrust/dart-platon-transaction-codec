@@ -13,5 +13,5 @@ String append0x(String s) {
 }
 
 Uint8List my_hexdecode(String hexStr) {
-  return hex.decode((hexStr.length.isOdd ? '0' : '') + hexStr);
+  return Uint8List.fromList(hex.decode((hexStr.length.isOdd ? '0' : '') + hexStr));
 }
